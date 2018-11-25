@@ -48,7 +48,7 @@ aws {
 }
 
 task deploy(type: AWSLambdaMigrateFunctionTask, dependsOn: build) {
-    functionName = "alexa-frases-peliculas"
+    functionName = "alexa-resultados-partidos"
     handler = "quotes.QuotesStreamHandler"
     role = "arn:aws:iam::${aws.accountId}:role/lambda_basic_execution"
     runtime = Runtime.Java8
